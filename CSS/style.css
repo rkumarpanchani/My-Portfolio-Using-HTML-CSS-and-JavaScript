@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+/* So, we will use classes e.g. navbar, etc and sub classes elements e.g. anchor, etc and will use CSS on them.
+   An ID is marked by the hash (#). The ID must be unique; by that I mean, you cannot have two elements with the same identifier on the same page.
+   To style more than one element, then use class notation, marked with the dot(.).
+   Padding make changes from inside
+   Margin make changes from outside.
+*/
+
+/*******************Default**********************/
+/* So by default, I choose margin and padding to be zero */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; /* To get rid from the text underlines */
+}
+
+/*******************Navigation**********************/
+/* So by default, flex direction is of row or horizontal 
+   So, as of now, I have ul and div in nav, so they alligned in row 
+*/
+.navbar {
+  display: flex; /* Put in row */
+  align-items: center;
+  position: sticky; /* When you will hover with mouse, you will feel it */
+  top: 0;
+  cursor: pointer;
+}
+
+.nav-list {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  /*Home About Languages Careers Contact*/
+  list-style: none; /* Because it is a list, so has bullets, I don't need them*/
+  padding: 30px 30px;
+}
+
+.nav-list li a {
+  /*Home About Languages Careers Contact - Hyperlinks*/
+  color: white;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.nav-list li a:hover {
+  /*Home About Languages Careers Contact - Psuedo-class i.e. hover - Helps to animate the text*/
+  color: silver;
+}
+
+.logo {
+  /*Ramesh.JPG*/
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 24%;
+  border: 3px solid white;
+  border-radius: 50px; /*Will help to create image in circle*/
+  margin: 10px;
+}
+
+.rightNav {
+  /*Search button box*/
+  width: 60%;
+  padding: 0px 100px;
+  text-align: center;
+}
+
+#search {
+  /*id="search"*/
+  width: 50%;
+  padding: 6px;
+  font-size: 18px;
+  border: 2px solid grey;
+  border-radius: 20px;
+}
+
+.background {
+  /*I put picture here because I want to render some part of picture in the navigation area as well*/
+  background: rgba(0, 0, 0, 0.8) url("../Images/Frankfurt_3.jpg");
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+/*******************Section**********************/
+/*<section class="background firstSection">, so here firstSection will helps to make the image bigger.*/
+.firstSection {
+  height: 100vh; /*100vh means 100 viewport height*/
+}
+
+.box-main {
+  display: flex; /*Will change into the row*/
+  justify-content: center; /*For center*/
+  align-items: center;
+  color: seashell;
+  font-family: "Courier New", Courier, monospace; /*Font style*/
+  max-width: 50%;
+  margin: auto; /*To bring in center*/
+  height: 70%;
+}
+
+.firstHalf {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondHalf {
+  width: 60%;
+}
+
+.secondHalf img {
+  border: 3px solid rgb(184, 183, 181);
+  /*border-radius: 140px;*/
+  border-radius: 54% 84% 97% 26% / 73% 50% 45% 20%;
+  /*border-top-left-radius: 6rem;
+  border-top-right-radius: 10rem;
+  border-bottom-left-radius: 12rem;
+  border-bottom-right-radius: 7rem;
+  */
+  display: block;
+  margin: auto;
+}
+
+.text-big {
+  font-size: 31px;
+}
+
+.text-small {
+  font-size: 18px;
+}
+
+.btn {
+  /*For all buttons, I used the btn class*/
+  padding: 8px 20px;
+  margin: 7px 3px;
+  border: 2px solid white;
+  border-radius: 20px; /*This will make button round in shape*/
+  font-size: 18px; /*This will change button text size*/
+  background: none; /*This will remove white background from the button*/
+  color: white; /*This will make button text to white*/
+  cursor: pointer; /*When I will move mouse cursor to button, then it will change it to pointer shape*/
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+
+.btn-sm {
+  /*Specific search button*/
+  padding: 6px 13px;
+  font-size: 18px;
+}
+
+/*******************Section_2nd, 3rd and 4th**********************/
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  text-align: justify;
+  font-family: "Ubuntu", sans-serif;
+  padding: 11px;
+}
+
+.section-left {
+  flex-direction: row-reverse; /*Using this we moved secion 3rd image from right to left*/
+}
+
+.paras {
+  padding: 0px 65px;
+}
+
+.sectionTag {
+  padding: 16px 0;
+}
+
+.sectionSubTag {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.thumbnail img {
+  width: 200px;
+  height: 300px;
+  border: 2px solid silver;
+  border-radius: 30px;
+  margin-top: 19px;
+}
+
+/*******************Section_5th_Contact**********************/
+.contact {
+  background-color: #f6f5f4;
+  height: 640px;
+}
+
+.text-center {
+  text-align: center;
+  padding-top: 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 35px;
+  color: black;
+}
+
+.form {
+  max-width: 63%;
+  margin: 30px auto;
+}
+
+.form-input {
+  margin: 13px 0;
+  padding: 5px 3px;
+  width: 100%;
+  font-size: 19px;
+  border: 2px solid grey;
+  border-radius: 6px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.btn-dark {
+  color: black;
+  border: 2px solid grey;
+}
+
+/*******************Section_6th_Footer**********************/
+.text-footer {
+  text-align: center;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+/*******************Section_1_Burger_For_Responsive_page**********************/
+/****************************Burger means 3 layers****************************/
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+}
+
+.line {
+  width: 33px;
+  background-color: white;
+  height: 4px;
+  margin: 5px 3px;
+}
+
+/*******************HTML Scroll - If clicked on contact, then take me there**********************/
+/*******************Now, in index.html, I will add ids**********************/
+html {
+  scroll-behavior: smooth;
+}

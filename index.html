@@ -1,0 +1,118 @@
+<!-- So write ! and enter to generate the boilerplate in HTML -->
+<!-- used following extensions LiveServer -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css"> <!--Connected CSS-->
+    <link rel="stylesheet" href="css/responsive.css"> <!--Connected CSS-->
+    <title>Welcome to Frankfurt - Germany</title>
+  </head>
+  <body>
+    <!--
+        nav for navigation,
+        <ul> element is used for unordered list with bullets,
+        <ol> element is used for ordered list with bullets,
+        <li> element is used to represent an item in a list.
+        <a> element (or anchor element), with its href attribute, creates a hyperlink. 
+        alt means alternative, if something didn't work, maybe because of poor network connection, then simply text will be displayed.
+        Reason to make many classes is that, I don't want to disturb the elements. 
+        For example, I have 3 buttons and I know I can create buttons without using classes but eventually when I will change one button, then it will do same thing for all other buttons. I don't want that to be happen.
+    -->
+    <nav class="navbar background h-nav-responsive"> <!--Look I used background picture here to render some part of picture in navigation area. And h-nav is for invisible reponsive website navigation-->
+        <ul class="nav-list v-class-responsive"> <!--v-class-responsive I used for opacity for responsive web-->
+            <div class="logo"><img src="Images/Ramesh.JPG" alt="Frankfurt" height="60" ></div>
+            <li><a href="#"> Home </li> <!--# means when I will click on home, it will take me there by default-->
+            <li><a href="#about"> About </li> <!--If you want when you click here and it take you in this specific section, then use id property in that section-->   
+            <li><a href="#skills"> Skills </li>
+            <li><a href="#education"> Education </li>
+            <li><a href="#experience"> Experience </li>
+            <li><a href="#contact"> Contact </li>
+        </ul>
+        <div class="rightNav  v-class-responsive"> <!--v-class-responsive I used for opacity for responsive web-->
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger"> <!--Created burger for the responsive website-->
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!--Here, I used background image, which I declared in css code. Also I used firstSection which will help me to make Frankfurt image bigger in size using css-->
+    <!--I also divide it into 2 parts i.e. firstHalf and secondHalf.-->
+    <section class="background firstSection">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big"> RAMESH KUMAR </p>
+                <p class="text-small"> Hello, I'm Information and Electrical Enginner, currently based in Frankfurt, Germany. I am mainly interested in frontend and backend development. I hold a master degree in Information Technology from Frankfurt University of Applied Sciences (FRAUAS). </p>
+                <div class="buttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Watch Video</button>
+                </div>
+            </div>
+
+            <div class="secondHalf">
+                <img src="Images/Discipline1.JPG" alt="Ramesh" height="390">
+            </div>
+        </div>
+    </section>
+
+    <!--Here, I declared second section-->
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big"> Adventurer </p>
+            <!--Just type lorem, if you don't want to write big paragraph -->
+            <p class="sectionSubTag text-small"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, error aperiam. Sed nemo labore maiores optio! Nesciunt, magnam. Labore ab iste tenetur enim odio reprehenderit distinctio nemo laudantium magni. Nihil! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum dolor quis tempora dolores. Itaque, deleniti alias eligendi incidunt quidem totam expedita ad non illo placeat dolore aspernatur odio odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat alias ab quis. Qui, rem dolorum repellendus aspernatur accusantium explicabo est voluptatibus ea, vel aut veritatis aliquid non a ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, error aperiam. Sed nemo labore maiores optio! Nesciunt, magnam. Labore ab iste tenetur enim odio reprehenderit distinctio nemo laudantium magni. Nihil! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum dolor quis tempora dolores. Itaque, deleniti alias eligendi incidunt quidem totam expedita ad non illo placeat dolore aspernatur odio odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat alias ab quis. Qui, rem dolorum repellendus aspernatur accusantium explicabo est voluptatibus ea, vel aut veritatis aliquid non a ad. </p>
+        </div>
+        <div class="thumbnail">
+            <img src="Images/Adventurer.JPG" alt="Another_Image" class="imgFluid">
+        </div>
+    </section>
+
+    <!--Here, I declared third section-->
+    <section class="section section-left"> <!--In section 3rd, 2 classes i.e. section and section-left--> 
+        <div class="paras">
+            <p class="sectionTag text-big"> My perceptions on Education </p>
+            <!--Just type lorem, if you don't want to write big paragraph -->
+            <p class="sectionSubTag text-small"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, error aperiam. Sed nemo labore maiores optio! Nesciunt, magnam. Labore ab iste tenetur enim odio reprehenderit distinctio nemo laudantium magni. Nihil! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum dolor quis tempora dolores. Itaque, deleniti alias eligendi incidunt quidem totam expedita ad non illo placeat dolore aspernatur odio odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat alias ab quis. Qui, rem dolorum repellendus aspernatur accusantium explicabo est voluptatibus ea, vel aut veritatis aliquid non a ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, error aperiam. Sed nemo labore maiores optio! Nesciunt, magnam. Labore ab iste tenetur enim odio reprehenderit distinctio nemo laudantium magni. Nihil! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum dolor quis tempora dolores. Itaque, deleniti alias eligendi incidunt quidem totam expedita ad non illo placeat dolore aspernatur odio odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat alias ab quis. Qui, rem dolorum repellendus aspernatur accusantium explicabo est voluptatibus ea, vel aut veritatis aliquid non a ad. </p>
+        </div>
+        <div class="thumbnail">
+            <img src="Images/Studies.JPG" alt="Another_Image" class="imgFluid" width="300" height="400">
+        </div>
+    </section>
+
+    <!--Here, I declared fourth section-->
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big"> Self-Discipline </p>
+            <!--Just type lorem, if you don't want to write big paragraph -->
+            <p class="sectionSubTag text-small"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, error aperiam. Sed nemo labore maiores optio! Nesciunt, magnam. Labore ab iste tenetur enim odio reprehenderit distinctio nemo laudantium magni. Nihil! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum dolor quis tempora dolores. Itaque, deleniti alias eligendi incidunt quidem totam expedita ad non illo placeat dolore aspernatur odio odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat alias ab quis. Qui, rem dolorum repellendus aspernatur accusantium explicabo est voluptatibus ea, vel aut veritatis aliquid non a ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, error aperiam. Sed nemo labore maiores optio! Nesciunt, magnam. Labore ab iste tenetur enim odio reprehenderit distinctio nemo laudantium magni. Nihil! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum dolor quis tempora dolores. Itaque, deleniti alias eligendi incidunt quidem totam expedita ad non illo placeat dolore aspernatur odio odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo fugiat alias ab quis. Qui, rem dolorum repellendus aspernatur accusantium explicabo est voluptatibus ea, vel aut veritatis aliquid non a ad. </p>
+        </div>
+        <div class="thumbnail">
+            <img src="Images/Germany_2.JPG" alt="Another_Image" class="imgFluid" width="300" height="400">
+        </div>
+    </section>
+    
+    <!--<hr> will create a horizontal black line and <br> tag will create empty space-->
+    <!--Here, I declared fifth section for contact-->
+    <section class="contact" id="contact">
+        <h2 class="text-center">Contact Me</h2>
+        <div class="form">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter your phone">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your email">
+            <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Views..."></textarea>
+            <button class="btn btn-dark">Submit</button>
+        </div>
+    </section>
+
+    <!--Here, I declared sixth section for footer-->
+    <footer class="background">
+        <p class="text-footer">Copyright &copy; 2050 - All right reserved</p>
+    </footer>
+    <script src="JavaScript/responsive.js"></script> <!--Connected JavaScript-->
+  </body>
+</html>
